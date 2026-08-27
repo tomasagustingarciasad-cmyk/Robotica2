@@ -5,7 +5,7 @@ clc, clear, close all;
 robot_3gdl;
 
 % 2. Configuración del método de Monte Carlo
-num_muestras = 15000; % Cantidad de puntos aleatorios a evaluar
+num_muestras = 150000; % Cantidad de puntos aleatorios a evaluar
 
 disp('--- Calculando el espacio de trabajo (Monte Carlo) ---');
 

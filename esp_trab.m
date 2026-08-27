@@ -2,11 +2,6 @@ clc; clear;
 
 robot_3gdl;
 
-% La idea de la primer visualización es recrear el esquema del espacio de
-% trabajo que se muestra en la datasheet del robot. Es decir, en el plano
-% x1z1. Para ello sólo nos interesa mover las articulaciones 2,3 y 5.
-% Para ello seguimos la secuencia especificada en el informe.
-
 % Para la segunda visualización, mostramos una vista superior.
 
 qlim = R.qlim;
@@ -98,7 +93,6 @@ plot3(XY(:,1), XY(:,2), zeros(size(XY,1),1), 'r-o', 'LineWidth',1.2, 'MarkerSize
 xlabel('X [m]'); ylabel('Y [m]');
 title('Vista superior (plano XY)');
 
-% --- REEMPLAZAR DESDE AQUÍ ---
 function Qsegmentos = crear_segmento(q_inicial, indice_art, q_final, N, omitir_primero)
     % Inicializamos la matriz con el valor inicial repetido N veces
     Qsegmentos = repmat(q_inicial, N, 1);
@@ -113,4 +107,3 @@ function Qsegmentos = crear_segmento(q_inicial, indice_art, q_final, N, omitir_p
         Qsegmentos = Qsegmentos(2:end, :);
     end
 end
-% --- HASTA AQUÍ ---
