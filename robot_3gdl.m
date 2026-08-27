@@ -19,7 +19,7 @@ dh = [
 R = SerialLink(dh, 'name', 'Brazo 4 GDL');
 % Límites de cada articulación (Asignación preliminar)
 R.qlim(1,1:2) = [-180, 180] * pi/180;
-R.qlim(2,1:2) = [-90,   90] * pi/180; 
+R.qlim(2,1:2) = [0,   150] * pi/180; 
 R.qlim(3,1:2) = [-90,   90] * pi/180;
 R.qlim(4,1:2) = [-180, 180] * pi/180;
 % Offset 
