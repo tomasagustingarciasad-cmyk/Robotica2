@@ -1,7 +1,7 @@
 % =========================================================================
 %  CINEMATICA INVERSA A PARTIR DE LOS DATOS DEL PANEL "TEACH"
 %
-%  Flujo de trabajo pensado:
+%  Flujo de trabajo:
 %    1) Corre robot_3gdl_cin y move los sliders hasta una pose que te guste.
 %    2) Anota los seis numeros del panel:  x  y  z  R  P  Y
 %    3) Pegalos como una fila en la matriz PUNTOS de aca abajo.
@@ -29,7 +29,6 @@ PUNTOS = [
     0.301   0    0.066    22.5    0    90.0
 ];
 %
-% Dejala vacia  ->  PUNTOS = [];  <-  para cargar los puntos a mano por consola.
 %
 % Juego de ejemplo que SI cumple los topes, por si queres probar la
 % grabacion (descomentalo y comenta el de arriba):
@@ -80,7 +79,7 @@ end
 % -------------------- VALIDACION PUNTO POR PUNTO -------------------------
 fprintf('\n=================== VALIDACION DE LOS PUNTOS ===================\n');
 fprintf('Topes:  q1 [%.0f,%.0f]   q2 [%.0f,%.0f]   q3 [%.0f,%.0f]   q4 [%.0f,%.0f]  deg\n', ...
-        'QLIM_DEG.');
+        QLIM_DEG.');
 fprintf(' #    x[mm]  y[mm]  z[mm]   q1[deg] cabeceo[deg]  estado\n');
 
 Qobj = zeros(0, 4);
