@@ -6,7 +6,7 @@ robot_3gdl;
 q = [pi/4, pi/6, -pi/4, 0]; 
 % c. Definición de un vector de booleanos para sistemas de referencia
 % [sistema{0}, sistema{1}, sistema{2}, sistema{3}]
-sistemas = [1, 1, 1, 1, 1];  % 1 = visualizar, 0 = ocultar
+%sistemas = [1, 1, 1, 1, 1];  % 1 = visualizar, 0 = ocultar
 
 % d. Ploteo del robot
 figure('Name', 'Sistemas de Referencia DH - 3 GDL', 'NumberTitle', 'off');
