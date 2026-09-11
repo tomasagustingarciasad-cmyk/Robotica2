@@ -205,9 +205,9 @@ tau_articular = R.gravload(q_ref);
     fprintf('Torque Actuador  (Motor hombro): %.1f mN·m\n', tau_actuador(2) * 1000);
 
     % --- GRAFICAR LA POSTURA DE REFERENCIA ---
-    figure('Name', 'Postura de Peor Caso Estático', 'NumberTitle', 'off');
-    R.plot(q_ref);
-    title('Validacion Manual: Brazo extendido (q = [0 0 0 0])');
+    %figure('Name', 'Postura de Peor Caso Estático', 'NumberTitle', 'off');
+    %R.plot(q_ref);
+    %title('Validacion Manual: Brazo extendido (q = [0 0 0 0])');
 
 
     
